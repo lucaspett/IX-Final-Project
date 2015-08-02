@@ -40,7 +40,7 @@ class JobsController < ApplicationController
 		@job.destroy
 
 		redirect_to jobs_path
-	end
+	end 
 
 private
 	def job_params
