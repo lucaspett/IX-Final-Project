@@ -1,0 +1,23 @@
+<p><strong>Title:</strong> 
+	<%= @job.title %></p>
+
+<p><strong>Description:</strong>
+	<%= @job.description %></p>
+
+<p><strong>Qualifications:</strong>
+	<%= @job.qualifications %></p>
+
+<p><strong>Pay:</strong>
+	<%= @job.pay %></p>
+
+<p><strong>Contact:</strong>
+	<%= @job.contact %></p>
+
+<p><strong>Date Published:</strong>
+	<%= @job.date_published %></p>
+
+<hr><br>
+
+<p><%= link_to "Job List", jobs_path %></p>
+ 
+<p><%= link_to "Edit", edit_job_path(@job) %></p>
