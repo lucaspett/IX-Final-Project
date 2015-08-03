@@ -17,9 +17,13 @@
 	<%= @job.date_published %></p>
 
 <hr><br>
+
+<% if view_jobs?(@job) %> 
  
-<h2>Job Application</h2>
-<%= render @job.applications %>
+  <h2><%= "Job Application" %></h2>
+  <%= render @job.applications %>
+
+<% end %>
 
 <h2>Apply Here</h2>
 
