@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
+  get 'jobs/your_posts' => 'jobs#your_posts'
+
   resources :jobs do
     resources :applications
   end

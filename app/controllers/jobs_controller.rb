@@ -15,6 +15,7 @@ class JobsController < ApplicationController
 
 	def show
 		@job = Job.find(params[:id])
+		@applications = @job.applications
 	end
 
 	def new
@@ -51,6 +52,10 @@ class JobsController < ApplicationController
 
 		redirect_to jobs_path
 	end 
+
+	def your_posts
+		@jobs = current_user.jobs
+	end
 
 	private
 

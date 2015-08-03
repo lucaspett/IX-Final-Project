@@ -1,0 +1,35 @@
+<table class="table">
+  <tr>
+    <th>Job Title</th>
+    <th>Description</th>
+    <th>Suggested Qualifications</th>
+    <th>Pay (R)</th>
+    <th>Contact (Email, Phone)</th>
+    <th>Date Published</th>
+  </tr>
+
+<%= form_tag jobs_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query], placeholder: "Job Title" %>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>
+ 
+  <% @jobs.each do |job| %>
+    <tr>
+      <td><%= job.title %></td>
+      <td><%= job.description %></td>
+      <td><%= job.qualifications %></td>
+      <td><%= job.pay%></td>
+      <td><%= job.contact%></td>
+      <td><%= job.date_published%></td>
+      <td><%= link_to 'Show', job_path(job) %></td>
+      <% if view_jobs?(job) %>
+        <td><%= link_to 'Edit', edit_job_path(job) %></td>
+        <td><%= link_to 'Destroy', job_path(job),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
