@@ -1,6 +1,16 @@
 class JobsController < ApplicationController
+	#before_action :require_permission, only: [:edit, :update, :destroy]
+
 	def index
-		@jobs = Job.all
+		@query = params[:query].presence
+
+		if @query
+			@jobs = Job.fuzzy_search(@query)
+		else
+			@jobs = Job.all
+		end
+
+		@jobs = @jobs.order(created_at: :desc)
 	end
 
 	def show

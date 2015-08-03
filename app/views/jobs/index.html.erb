@@ -10,6 +10,13 @@
     <th>Contact (Email, Phone)</th>
     <th>Date Published</th>
   </tr>
+
+<%= form_tag jobs_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query], placeholder: "Job Title" %>
+    <%= submit_tag "Search" %>
+  </p>
+<% end %>
  
   <% @jobs.each do |job| %>
     <tr>
