@@ -25,6 +25,8 @@
 
 <%= render 'applications/form' %>
 
-<p><%= link_to "Edit", edit_job_path(@job) %></p>
+<% if view_jobs?(@job) %>
+	<p><%= link_to "Edit", edit_job_path(@job) %></p>
+<% end %>
 
 <p><%= link_to "Job List", jobs_path %></p>
