@@ -14,5 +14,9 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require workwire
+//= require html5shiv
+//= require jquery.isotope.min
+//= require jquery.prettyPhoto
+//= require respond.min
 //= require turbolinks
 //= require_tree .
