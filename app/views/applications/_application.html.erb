@@ -1,0 +1,36 @@
+<div class="applications">
+	<p>
+	  <strong>Name:</strong>
+	  <%= application.name %>
+	</p>
+	
+	<p>
+	  <strong>Contact (Email, Phone):</strong>
+	  <%= application.contact %>
+	</p>
+	
+	<p>
+	  <strong>City / Town:</strong>
+	  <%= application.address %>
+	</p>
+	
+	<p>
+	  <strong>List Relevant Skills:</strong>
+	  <%= application.skills %>
+	</p>
+	
+	<p>
+	  <strong>List Past Experiences:</strong>
+	  <%= application.past_experiences %>
+	</p>
+	 
+	<p>
+	  <strong>Why Does This Job Interest You?:</strong>
+	  <%= application.summary %>
+	</p>
+</div>
+<p>
+  <%= link_to 'Destroy Application', [application.job, application],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

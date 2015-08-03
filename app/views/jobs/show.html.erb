@@ -1,24 +1,30 @@
-<p><strong>Title:</strong> 
+<p><strong>Job Title:</strong> 
 	<%= @job.title %></p>
 
 <p><strong>Description:</strong>
 	<%= @job.description %></p>
 
-<p><strong>Qualifications:</strong>
+<p><strong>Suggested Qualifications:</strong>
 	<%= @job.qualifications %></p>
 
 <p><strong>Pay (R):</strong>
 	<%= @job.pay %></p>
 
-<p><strong>Contact:</strong>
+<p><strong>Contact (Email,Phone):</strong>
 	<%= @job.contact %></p>
 
 <p><strong>Date Published:</strong>
 	<%= @job.date_published %></p>
 
 <hr><br>
+ 
+<h2>Job Application</h2>
+<%= render @job.applications %>
+
+<h2>Apply Here</h2>
+
+<%= render 'applications/form' %>
 
 <p><%= link_to "Edit", edit_job_path(@job) %></p>
 
 <p><%= link_to "Job List", jobs_path %></p>
- 

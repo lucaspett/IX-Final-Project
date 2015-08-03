@@ -14,7 +14,7 @@
   
 <%= form_for @job do |f| %>
 <p>
-	<%= f.label :title %><br>
+	<%= f.label :title, "Job Title" %><br>
 	<%= f.text_field :title %>
 </p>
 <p>
@@ -22,7 +22,7 @@
 	<%= f.text_area :description %>
 </p>
 <p>
-	<%= f.label :qualifications %><br>
+	<%= f.label :qualifications, "Suggested Qualifications" %><br>
 	<%= f.text_field :qualifications %>
 </p>
 <p>
@@ -30,7 +30,7 @@
 	<%= f.text_field :pay %>
 </p>
 <p>
-	<%= f.label :contact %><br>
+	<%= f.label :contact, "Contact (Email, Phone)" %><br>
 	<%= f.text_field :contact%>
 </p>
 <p>
