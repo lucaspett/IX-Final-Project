@@ -15,6 +15,6 @@ class ApplicationsController < ApplicationController
  
   private
     def application_params
-      params.require(:application).permit(:name, :contact, :address, :skills, :past_experiences, :summary)
+      params.require(:application).permit(:name, :contact, :address, :skills, :past_experiences, :summary, :user_id, :job_id)
     end
 end
