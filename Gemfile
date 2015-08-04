@@ -29,9 +29,9 @@ gem 'devise'
 
 gem 'twitter-bootstrap-rails'
 
-gem 'bootstrap-glyphicons'
-
 gem 'font-awesome-rails'
+
+gem 'bootstrap-glyphicons'
 
 gem 'textacular', '~> 3.0'
 

@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require bootstrap/glyphicons
+ *= require font-awesome
  *= require_tree .
  *= require workwire
- *= require font-awesome
  *= require prettyPhoto
  *= require responsive
  *= require custom

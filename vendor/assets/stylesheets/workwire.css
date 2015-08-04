@@ -128,7 +128,7 @@ body > section {
 .navbar {
 	border-radius: 0;
 	margin-bottom: 0;
-	background: #151515;
+	background: #2E2E2E;
 	padding: 15px 0;
 	padding-bottom: 0;
 }
@@ -164,7 +164,7 @@ body > section {
 	color: #3498db;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-	background-color: #333;
+	background-color: #3498db;
 	color: #fff;
 }
 /*************************

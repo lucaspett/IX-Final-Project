@@ -1,0 +1,60 @@
+.login_name {
+	color: #3BB9FF;
+}
+
+.btn-slide {
+	width: 500px;
+	font-size: 50px;
+	font-family: sans-serif;
+}
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#main-slider .carousel h1 {
+	color: black;
+}
+
+#main-slider .carousel h2 {
+	color: black;
+}
+
+/* About Page */
+.about-page h1 {
+	color: black;
+}
+
+.about-page h2 {
+	color: black;
+}
+
+.about-page::after {
+	content: "";
+	background-image: url(http://thecityfix.com/files/2011/09/khayelitsha_hr.jpg);
+	opacity: 0.1; 
+	padding-bottom: 490px;
+	background-size: cover;
+	background-position: center;
+	margin-top: -22px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
+/* Sticky Footer */
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 0;
+	z-index: 1000;
+}
+
+.color-border {
+	padding-bottom: 60px;
+}
