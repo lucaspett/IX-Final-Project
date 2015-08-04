@@ -113,6 +113,39 @@
 	z-index: -1; 
 }
 
+/*Forgot Your Password*/
+.fyp-page h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	font-family: 'Halant', serif;
+	font-size: 50px;
+}
+
+.fyp-page-field {
+	color: black;
+	text-align: center;
+}
+
+.fyp-page-actions {
+	color: black;
+	text-align: center;
+}
+
+.fyp-page {
+	content: "";
+	background-image: url("http://topwalls.net/wallpapers/2012/08/Table-Mountain-National-Park-Cape-Town-South-Africa-1080x1920.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
 /* About Page */
 .about-page h1 {
 	color: black;
