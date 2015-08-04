@@ -7,6 +7,7 @@
     <th>Pay (R)</th>
     <th>Contact (Email, Phone)</th>
     <th>Date Published</th>
+    <th>Job Completed</th>
   </tr>
 
 <%= form_tag jobs_path, method: :get do %>
@@ -24,6 +25,7 @@
       <td><%= job.pay%></td>
       <td><%= job.contact%></td>
       <td><%= job.date_published%></td>
+      <td><%= yes_no job.accepted %></td>
       <td><%= link_to 'Show', job_path(job) %></td>
       <% if view_jobs?(job) %>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>

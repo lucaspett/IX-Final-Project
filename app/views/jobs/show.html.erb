@@ -16,6 +16,9 @@
 <p><strong>Date Published:</strong>
 	<%= @job.date_published %></p>
 
+<p><strong>Job Completed:</strong>
+	<%= yes_no @job.accepted %></p>
+
 <hr><br>
 
 <% if view_jobs?(@job) %> 

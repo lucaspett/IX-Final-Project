@@ -12,10 +12,10 @@
  *
  *= require bootstrap/glyphicons
  *= require font-awesome
- *= require_tree .
  *= require workwire
  *= require prettyPhoto
  *= require responsive
  *= require custom
+ *= require_tree .
  *= require_self
  */

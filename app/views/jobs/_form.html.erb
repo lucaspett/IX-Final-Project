@@ -38,6 +38,10 @@
 	<%= f.text_field :date_published %>
 </p>
 <p>
+	<%= f.label :accepted, "Job Completed?" %><br>
+	<%= f.check_box :accepted %>
+</p>
+<p>
 	<%= f.submit %>
 </p>
 <% end %>
