@@ -30,7 +30,7 @@
       <% if job.accepted == true %>
         <td><i class="glyphicon glyphicon-ok"></i></td>
       <% else %>
-        <td></td>
+        <td><i class="glyphicon glyphicon-remove"></i></td>
       <% end %>
       <td><%= link_to 'Show', job_path(job) %></td>
       <% if view_jobs?(job) %>

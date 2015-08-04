@@ -1,3 +1,4 @@
+<h1>Your Posts</h1>
 <table class="table">
   <tr>
     <th>Job Title</th>
@@ -24,7 +25,11 @@
       <td><%= job.pay%></td>
       <td><%= job.contact%></td>
       <td><%= job.date_published%></td>
-      <td><%= yes_no job.accepted %></td>
+      <% if job.accepted == true %>
+        <td><i class="glyphicon glyphicon-ok"></i></td>
+      <% else %>
+        <td><i class="glyphicon glyphicon-remove"></i></td>
+      <% end %>
       <td><%= link_to 'Show', job_path(job) %></td>
       <% if view_jobs?(job) %>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
