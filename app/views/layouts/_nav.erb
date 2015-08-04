@@ -6,10 +6,10 @@
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
           <li class="active"><%= link_to "Home", root_path %></li>
-          <li><a href="about-us.html">About</a></li>
+          <li><%= link_to "About", jobs_about_path %></li>
           <li><%= link_to 'Job Listings', jobs_path %></li>
           <li><%= link_to "Your Posts", jobs_your_posts_path %></li>
-          <li><a href="portfolio.html">Contact</a></li>
+          <li><%= link_to "Contact", jobs_contact_path %></li>
           <li class="login_name">
             <% if user_signed_in? %>
               <strong><%= current_user.email %></strong>.

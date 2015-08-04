@@ -4,5 +4,24 @@
 
 .btn-slide {
 	width: 500px;
-	font-size: 80px;
+	font-size: 50px;
+	font-family: 'EB Garamond', serif;
 }
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#main-slider .carousel h1 {
+	color: black;
+}
+
+#main-slider .carousel h2 {
+	color: black;
+}
+
+.color-border {
+	background: black;
+}
+

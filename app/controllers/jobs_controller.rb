@@ -57,6 +57,12 @@ class JobsController < ApplicationController
 		@jobs = current_user.jobs
 	end
 
+	def about
+	end
+
+	def contact
+	end
+
 	private
 
 	def require_permission

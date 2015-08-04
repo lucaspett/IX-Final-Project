@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   get 'jobs/your_posts' => 'jobs#your_posts'
 
+  get 'jobs/about' => 'jobs#about'
+
+   get 'jobs/contact' => 'jobs#contact'
+
   resources :jobs do
     resources :applications
   end
