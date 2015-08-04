@@ -1,4 +1,5 @@
 class JobsController < ApplicationController
+	before_action :authenticate_user!, except: [:about, :contact]
 	before_action :require_permission, only: [:edit, :update, :destroy]
 
 	def index
