@@ -24,16 +24,19 @@
 /* About Page */
 .about-page h1 {
 	color: black;
+	text-align: center;
 }
 
 .about-page h2 {
 	color: black;
+	padding: 50px;
+	background: rgba(0, 191, 255, 0.25);
 }
 
 .about-page::after {
 	content: "";
-	background-image: url(http://thecityfix.com/files/2011/09/khayelitsha_hr.jpg);
-	opacity: 0.1; 
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Khayelitsha_Lookout-Hill_Ilitha-Park.jpg);
+	opacity: 0.4; 
 	padding-bottom: 490px;
 	background-size: cover;
 	background-position: center;
