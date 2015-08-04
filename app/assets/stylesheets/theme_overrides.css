@@ -8,7 +8,11 @@
     left: 50px;
     text-align: left;
     margin: auto;
-    bottom: 18px;
+    bottom: 14px;
+}
+
+.navbar-nav>li {
+	padding-bottom: 22px;
 }
 
 .btn-slide {
