@@ -13,8 +13,15 @@ puts "Creating Users and Jobs..."
 
 first_user = User.create! email: "lucaspettinato@gmail.com", password: "password", password_confirmation: "password"
 second_user = User.create! email: "ian@ianisawesome.com", password: "password", password_confirmation: "password"
-third_user = User.create! email: "ericaduinyamom@sportz.com", password: "password", password_confirmation: "password"
+third_user = User.create! email: "ericadu@sportz.com", password: "password", password_confirmation: "password"
+fourth_user = User.create! email: "elderhan@umich.edu", password: "capetown", password_confirmation: "capetown"
 
-Job.create! title:"Crib Building", description:"I need someone to help me build a crib... I have octuplets on the way!", qualifications:"Strong and Patient", pay: 500, contact:"lucaspettinato@gmail.com / 9234567654", date_published:"08/03/2015", user_id: first_user.id, accepted: true
-Job.create! title:"Help! I've fallen and I can't get up", description:"I fell, someone pick me back up", qualifications:"Strong and Willing To Participate in This Useless Job", pay: 10, contact:"ian@ianisawesome.com", date_published:"08/02/2015", user_id: second_user.id, accepted: false
-Job.create! title:"Sportz", description:"Play sportz w/ me", qualifications:"Athletic Bod", pay: 50, contact:"ericaduinyamom@sportz.com", date_published:"08/04/2015", user_id: third_user.id, accepted: false
+Job.create! title:"Crib Building", description:"Need help with building a crib for upcoming twins!", qualifications:"Strong and Patient", pay: 700, contact:"lucaspettinato@gmail.com / 9234567654", date_published:"08/03/2015", user_id: first_user.id, accepted: true
+Job.create! title:"Stacking firewood", description:"A few hours worth of stacking lumber for the winter", qualifications:"Able to lift up to 30 lbs", pay: 500, contact:"ian@ianisawesome.com", date_published:"08/02/2015", user_id: second_user.id, accepted: false
+Job.create! title:"Cleaning gutters", description:"Need assistance in cleaning mud out of gutters", qualifications:"3 hours of time available", pay: 400, contact:"ericadu@sportz.com / 2439872349", date_published:"08/04/2015", user_id: third_user.id, accepted: false
+Job.create! title:"Suit Tailoring", description: "Need a new suit tailored quickly", qualifications: "Demonstrated experience in tailoring", pay: 800, contact: "elderhan@umich.edu/ 2309840983", date_published: "8/05/2015", user_id: fourth_user.id, accepted: true
+Job.create! title:"Sink needs fixing", description: "Need to fix sink plumbing", qualifications: "Experience with fixing utilities", pay: 300, contact: "ian@ianisawesome.com", date_published: "8/05/2015", user_id: second_user.id, accepted: false
+Job.create! title:"Need painting for friend", description: "Need a piece of art made quickly", qualifications: "Demonstrated portfolio", pay: 600, contact: "lucaspettinato@gmail.com", date_published: "8/05/2015", user_id: first_user.id, accepted: false
+Job.create! title:"Need an event catered", description: "Need a meal for 10 cooked quickly", qualifications: "Catering experience", pay: 700, contact: "elderhan@umich.edu", date_published: "8/05/2015", user_id: fourth_user.id, accepted: false
+Job.create! title:"House cleaning", description: "Need floors swept quickly", qualifications: "None", pay: 200, contact: "ericadu@sportz.com", date_published: "8/05/2015", user_id: third_user.id, accepted: true
+
