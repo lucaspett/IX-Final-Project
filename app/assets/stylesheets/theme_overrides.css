@@ -241,12 +241,14 @@
 	color: black;
 	text-align: center;
 	font-family: 'PT Serif', serif;
+	font-size: 30px;
 }
 
 .contact-page h3 {
 	color: black;
 	text-align: center;
 	font-family: 'PT Serif', serif;
+	font-size: 25px;
 }
 
 .contact-page::after {
@@ -268,6 +270,18 @@
 .contact-box {
 	background: rgba(255, 255, 255, .6);
 	border-radius: 10px;
+	text-align: center;
+}
+
+.lucas {
+	max-height: 400px;
+	
+	border-radius: 20px;
+}
+
+.michael {
+	max-height: 400px;
+	border-radius: 20px;
 }
 
 /* Sticky Footer */
