@@ -198,9 +198,10 @@
 	text-align: center;
 }
 
-.about-page h2 {
+.about-page p {
 	color: black;
 	padding: 50px;
+	font-size: 23px;
 }
 
 .about-page::after {
