@@ -84,28 +84,6 @@
 	display: inline-block;
 }
 
-/*Contact Page*/
-.contact-page {
-	text-align: center;
-	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
-	opacity: 0.8; 
-	background-size: cover;
-	background-position: center;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1; 
-
-}
-.contact-box {
-	background: white;
-	border-radius: 10px;
-}
-
-
-
 /*Signup Page*/
 .signup-page h1 {
 	color: white;
@@ -230,8 +208,9 @@
 	padding: 50px;
 	font-size: 23px;
 	font-family: 'PT Serif', serif;
-	background: rgba(255,255,255,.55);
+	background: rgba(255,255,255,.6);
 	margin-top: 50px;
+	border-radius: 10px;
 }
 
 .about-page::after {
@@ -248,6 +227,47 @@
 	right: 0;
 	position: absolute;
 	z-index: -1; 
+}
+
+/*Contact Page*/
+
+.contact-page h1 {
+	color: black;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+.contact-page h2 {
+	color: black;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+.contact-page h3 {
+	color: black;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+.contact-page::after {
+	content: "";
+	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
+	opacity: 0.6; 
+	padding-bottom: 490px;
+	background-size: cover;
+	background-position: center;
+	margin-top: -22px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+
+}
+.contact-box {
+	background: rgba(255, 255, 255, .6);
+	border-radius: 10px;
 }
 
 /* Sticky Footer */
