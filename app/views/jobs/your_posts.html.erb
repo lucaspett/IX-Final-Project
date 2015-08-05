@@ -31,12 +31,20 @@
       <% else %>
         <td><i class="glyphicon glyphicon-remove"></i></td>
       <% end %>
-      <td><%= link_to 'Show', job_path(job) %></td>
+      <td><%= link_to job_path(job), class: 'btn btn-default' do %>
+        Show <i class="glyphicon glyphicon-folder-open"></i>
+      <% end %>
+      </td>
       <% if view_jobs?(job) %>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job_path(job),
+        <td><%= link_to edit_job_path(job), class: 'btn btn-default' do %>
+        Edit <i class="glyphicon glyphicon-edit"></i>
+      <% end %>
+      </td>
+      <td><%= link_to job_path(job), class: 'btn btn-default',
                 method: :delete,
-                data: { confirm: 'Are you sure?' } %></td>
+                data: { confirm: 'Are you sure?' } do %>
+          Destroy <i class="glyphicon glyphicon-trash"></i>
+          <% end %>
       <% end %>
       <td colspan="8"></td>
     </tr>
