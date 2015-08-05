@@ -84,6 +84,28 @@
 	display: inline-block;
 }
 
+/*Contact Page*/
+.contact-page {
+	text-align: center;
+	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+
+}
+.contact-box {
+	background: white;
+	border-radius: 10px;
+}
+
+
+
 /*Signup Page*/
 .signup-page h1 {
 	color: white;
