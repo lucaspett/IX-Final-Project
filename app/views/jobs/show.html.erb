@@ -1,41 +1,50 @@
-<p><strong>Job Title:</strong> 
-	<%= @job.title %></p>
+<div class="show-page">
+	<div class="fluid container">
+		<div class="row">
+			<h1>Job Posting</h1>
+			<div class="show-box">
+				<p><strong>Job Title:</strong> 
+					<%= @job.title %></p>
 
-<p><strong>Description:</strong>
-	<%= @job.description %></p>
+				<p><strong>Description:</strong>
+					<%= @job.description %></p>
 
-<p><strong>Suggested Qualifications:</strong>
-	<%= @job.qualifications %></p>
+				<p><strong>Suggested Qualifications:</strong>
+					<%= @job.qualifications %></p>
 
-<p><strong>Pay (R):</strong>
-	<%= @job.pay %></p>
+				<p><strong>Pay (R):</strong>
+					<%= @job.pay %></p>
 
-<p><strong>Contact (Email,Phone):</strong>
-	<%= @job.contact %></p>
+				<p><strong>Contact (Email,Phone):</strong>
+					<%= @job.contact %></p>
 
-<p><strong>Date Published:</strong>
-	<%= @job.date_published %></p>
+				<p><strong>Date Published:</strong>
+					<%= @job.date_published %></p>
 
-<p><strong>Job Taken:</strong>
-	<%= yes_no @job.accepted %></p>
+				<p><strong>Job Taken:</strong>
+					<%= yes_no @job.accepted %></p>
 
-<hr><br>
+				<hr><br>
 
-<% if view_jobs?(@job) %> 
- 
-  <h2><%= "Job Applications" %></h2>
-  <%= render @job.applications %>
+				<% if view_jobs?(@job) %> 
+				 
+				  <h2><%= "Job Applications" %></h2>
+				  <%= render @job.applications %>
 
-<% end %>
+				<% end %>
 
-<h2>Apply Here</h2>
+				<h2>Apply Here</h2>
 
-<%= render 'applications/form' %>
+				<%= render 'applications/form' %>
 
-<% if view_jobs?(@job) %>
-	<p><%= link_to "Edit", edit_job_path(@job) %></p>
-<% end %>
+				<% if view_jobs?(@job) %>
+					<p><%= link_to "Edit", edit_job_path(@job), class: "btn btn-primary"  %></p>
+				<% end %>
 
-<p><%= link_to "Back", :back %></p>
+				<p><%= link_to "Back", :back, class: "btn btn-primary"  %></p>
 
-<p><%= link_to "Job Listings", jobs_path %></p>
+				<p><%= link_to "Job Listings", jobs_path, class: "btn btn-primary"  %></p>
+			</div>
+		</div>
+	</div>
+</div>
