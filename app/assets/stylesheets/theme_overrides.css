@@ -1,3 +1,8 @@
+/*HomePage Navbar / Slider*/
+.navbar-inverse {
+	border-radius: 0;
+}
+
 .login_name {
 	color: #3BB9FF;
 }
@@ -34,15 +39,169 @@
 	color: black;
 }
 
+/*Login Page*/
+.login-page h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	font-family: 'Halant', serif;
+	font-size: 70px;
+}
+
+.login-page-field {
+	color: black;
+	text-align: center;
+}
+
+.login-page-actions {
+	color: black;
+	text-align: center;
+}
+
+.login-page {
+	content: "";
+	background-image: url("http://topwalls.net/wallpapers/2012/08/Table-Mountain-National-Park-Cape-Town-South-Africa-1080x1920.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
+.login-page-signup {
+	text-align: center;
+}
+
+.login-signup {
+	display: inline-block;
+}
+
+/*Signup Page*/
+.signup-page h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	font-family: 'Halant', serif;
+	font-size: 70px;
+}
+
+.signup-page-field {
+	color: black;
+	text-align: center;
+}
+
+.signup-page-actions {
+	color: black;
+	text-align: center;
+}
+
+.signup-page {
+	content: "";
+	background-image: url("http://topwalls.net/wallpapers/2012/08/Table-Mountain-National-Park-Cape-Town-South-Africa-1080x1920.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
+/*Forgot Your Password*/
+.fyp-page h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	font-family: 'Halant', serif;
+	font-size: 50px;
+}
+
+.fyp-page-field {
+	color: black;
+	text-align: center;
+}
+
+.fyp-page-actions {
+	color: black;
+	text-align: center;
+}
+
+.fyp-page {
+	content: "";
+	background-image: url("http://topwalls.net/wallpapers/2012/08/Table-Mountain-National-Park-Cape-Town-South-Africa-1080x1920.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
+/*Edit Profile*/
+.edit-profile-page h1 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+	font-family: 'Halant', serif;
+	font-size: 50px;
+}
+
+.edit-profile-page h3 {
+	color: white;
+	text-align: center;
+	padding-top: 35px;
+	font-family: 'Halant', serif;
+	font-size: 20px;
+}
+
+.edit-profile-page-field {
+	color: black;
+	text-align: center;
+}
+
+.edit-profile-page-actions {
+	color: black;
+	text-align: center;
+}
+
+.edit-profile-page {
+	content: "";
+	background-image: url("http://topwalls.net/wallpapers/2012/08/Table-Mountain-National-Park-Cape-Town-South-Africa-1080x1920.jpg");
+	opacity: 0.8; 
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
+.edit-profile-back {
+	color: black;
+	text-align: center;
+}
+
 /* About Page */
 .about-page h1 {
 	color: black;
 	text-align: center;
 }
 
-.about-page h2 {
+.about-page p {
 	color: black;
 	padding: 50px;
+	font-size: 23px;
 }
 
 .about-page::after {
