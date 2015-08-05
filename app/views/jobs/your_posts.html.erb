@@ -1,52 +1,54 @@
-<h1>Your Posts</h1>
-<table class="table">
-  <tr>
-    <th>Job Title</th>
-    <th>Description</th>
-    <th>Suggested Qualifications</th>
-    <th>Pay (R)</th>
-    <th>Contact (Email, Phone)</th>
-    <th>Date Published</th>
-    <th>Job Taken</th>
-    <th colspan="8"></th>
-  </tr>
-
-<%= form_tag jobs_path, method: :get do %>
-  <p>
-    <%= text_field_tag :query, params[:query], placeholder: "Job Title" %>
-    <%= submit_tag "Search" %>
-  </p>
-<% end %>
- 
-  <% @jobs.each do |job| %>
+<div class="fluid container">
+  <h1>Your Posts</h1>
+  <table class="table">
     <tr>
-      <td><%= job.title %></td>
-      <td><%= job.description %></td>
-      <td><%= job.qualifications %></td>
-      <td><%= job.pay%></td>
-      <td><%= job.contact%></td>
-      <td><%= job.date_published%></td>
-      <% if job.accepted == true %>
-        <td><i class="glyphicon glyphicon-ok"></i></td>
-      <% else %>
-        <td><i class="glyphicon glyphicon-remove"></i></td>
-      <% end %>
-      <td><%= link_to job_path(job), class: 'btn btn-default' do %>
-        Show <i class="glyphicon glyphicon-folder-open"></i>
-      <% end %>
-      </td>
-      <% if view_jobs?(job) %>
-        <td><%= link_to edit_job_path(job), class: 'btn btn-default' do %>
-        Edit <i class="glyphicon glyphicon-edit"></i>
-      <% end %>
-      </td>
-      <td><%= link_to job_path(job), class: 'btn btn-default',
-                method: :delete,
-                data: { confirm: 'Are you sure?' } do %>
-          Destroy <i class="glyphicon glyphicon-trash"></i>
-          <% end %>
-      <% end %>
-      <td colspan="8"></td>
+      <th>Job Title</th>
+      <th>Description</th>
+      <th>Suggested Qualifications</th>
+      <th>Pay (R)</th>
+      <th>Contact (Email, Phone)</th>
+      <th>Date Published</th>
+      <th>Job Taken</th>
+      <th colspan="8"></th>
     </tr>
+
+  <%= form_tag jobs_path, method: :get do %>
+    <p>
+      <%= text_field_tag :query, params[:query], placeholder: "Job Title" %>
+      <%= submit_tag "Search" %>
+    </p>
   <% end %>
-</table>
+   
+    <% @jobs.each do |job| %>
+      <tr>
+        <td><%= job.title %></td>
+        <td><%= job.description %></td>
+        <td><%= job.qualifications %></td>
+        <td><%= job.pay%></td>
+        <td><%= job.contact%></td>
+        <td><%= job.date_published%></td>
+        <% if job.accepted == true %>
+          <td><i class="glyphicon glyphicon-ok"></i></td>
+        <% else %>
+          <td><i class="glyphicon glyphicon-remove"></i></td>
+        <% end %>
+        <td><%= link_to job_path(job), class: 'btn btn-default' do %>
+          Show <i class="glyphicon glyphicon-folder-open"></i>
+        <% end %>
+        </td>
+        <% if view_jobs?(job) %>
+          <td><%= link_to edit_job_path(job), class: 'btn btn-default' do %>
+          Edit <i class="glyphicon glyphicon-edit"></i>
+        <% end %>
+        </td>
+        <td><%= link_to job_path(job), class: 'btn btn-default',
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } do %>
+            Destroy <i class="glyphicon glyphicon-trash"></i>
+            <% end %>
+        <% end %>
+        <td colspan="8"></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
