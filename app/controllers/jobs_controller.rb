@@ -51,7 +51,7 @@ class JobsController < ApplicationController
 		@job = Job.find(params[:id])
 		@job.destroy
 
-		redirect_to jobs_path
+		redirect_to jobs_your_posts_path
 	end 
 
 	def your_posts

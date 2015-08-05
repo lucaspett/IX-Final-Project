@@ -8,6 +8,7 @@
     <th>Contact (Email, Phone)</th>
     <th>Date Published</th>
     <th>Job Taken</th>
+    <th colspan="8"></th>
   </tr>
 
 <%= form_tag jobs_path, method: :get do %>
@@ -37,6 +38,7 @@
                 method: :delete,
                 data: { confirm: 'Are you sure?' } %></td>
       <% end %>
+      <td colspan="8"></td>
     </tr>
   <% end %>
 </table>
