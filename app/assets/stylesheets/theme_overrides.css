@@ -275,7 +275,6 @@
 
 .lucas {
 	max-height: 400px;
-
 	border-radius: 20px;
 }
 
@@ -364,6 +363,11 @@
 
 
 /*Edit*/
+.edit-page {
+	overflow-y: scroll;
+  	position: relative;
+}
+
 .edit-page h1 {
 	color: black;
 	text-align: center;
@@ -371,9 +375,12 @@
 }
 
 .edit-box {
+	margin-left: auto;
+	margin-right: auto;
 	background: rgba(255, 255, 255, .9);
 	border-radius: 10px;
 	text-align: center;
+	width: 550px;
 }
 
 .edit-page::after {
@@ -384,12 +391,20 @@
 	background-size: cover;
 	background-position: center;
 	margin-top: -22px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	position: absolute;
 	z-index: -1; 
+}
+
+.form-attributes {
+	padding: 10px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
 }
 
 /* Sticky Footer */

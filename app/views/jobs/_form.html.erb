@@ -1,47 +1,49 @@
-<% if @job.errors.any? %>
-<div id="error_explanation">
-  <h2>
-    <%= pluralize(@job.errors.count, "error") %> prohibited
-    this job from being saved:
-  </h2>
-  <ul>
-    <% @job.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ul>
+<div class="form-page">
+	<% if @job.errors.any? %>
+	<div id="error_explanation">
+	  <h2>
+	    <%= pluralize(@job.errors.count, "error") %> prohibited
+	    this job from being saved:
+	  </h2>
+	  <ul>
+	    <% @job.errors.full_messages.each do |msg| %>
+	      <li><%= msg %></li>
+	    <% end %>
+	  </ul>
+	</div>
+	<% end %>
+	  
+	<%= form_for @job do |f| %>
+	<p class="form-attributes">
+		<%= f.label :title, "Job Title" %><br>
+		<%= f.text_field :title %>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :description %><br>
+		<%= f.text_area :description %>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :qualifications, "Suggested Qualifications" %><br>
+		<%= f.text_field :qualifications %>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :pay, "Pay (R)" %><br>
+		<%= f.text_field :pay %>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :contact, "Contact (Email, Phone)" %><br>
+		<%= f.text_field :contact%>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :date_published %><br>
+		<%= f.text_field :date_published %>
+	</p>
+	<p class="form-attributes">
+		<%= f.label :accepted, "Job Taken" %><br>
+		<%= f.check_box :accepted %>
+	</p>
+	<p>
+		<%= f.submit class: "btn btn-success" %>
+	</p>
+	<% end %>
 </div>
-<% end %>
-  
-<%= form_for @job do |f| %>
-<p>
-	<%= f.label :title, "Job Title" %><br>
-	<%= f.text_field :title %>
-</p>
-<p>
-	<%= f.label :description %><br>
-	<%= f.text_area :description %>
-</p>
-<p>
-	<%= f.label :qualifications, "Suggested Qualifications" %><br>
-	<%= f.text_field :qualifications %>
-</p>
-<p>
-	<%= f.label :pay, "Pay (R)" %><br>
-	<%= f.text_field :pay %>
-</p>
-<p>
-	<%= f.label :contact, "Contact (Email, Phone)" %><br>
-	<%= f.text_field :contact%>
-</p>
-<p>
-	<%= f.label :date_published %><br>
-	<%= f.text_field :date_published %>
-</p>
-<p>
-	<%= f.label :accepted, "Job Taken" %><br>
-	<%= f.check_box :accepted %>
-</p>
-<p>
-	<%= f.submit %>
-</p>
-<% end %>
