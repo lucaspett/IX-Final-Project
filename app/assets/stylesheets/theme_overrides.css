@@ -268,8 +268,9 @@
 }
 .contact-box {
 	background: rgba(255, 255, 255, .6);
-	border-radius: 10px;
+	border-radius: 20px;
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 .lucas {
@@ -308,8 +309,8 @@
 
 .job-listings::after {
 	content: "";
-	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
-	opacity: 0.6; 
+	background-image: url("https://download.unsplash.com/photo-1429032021766-c6a53949594f");
+	opacity: 0.5; 
 	padding-bottom: 490px;
 	background-size: cover;
 	background-position: center;
@@ -345,7 +346,7 @@
 
 .your-posts::after {
 	content: "";
-	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
+	background-image: url("https://download.unsplash.com/photo-1418479631014-8cbf89db3431");
 	opacity: 0.6; 
 	padding-bottom: 490px;
 	background-size: cover;
