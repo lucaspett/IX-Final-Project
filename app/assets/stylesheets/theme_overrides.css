@@ -230,7 +230,6 @@
 }
 
 /*Contact Page*/
-
 .contact-page h1 {
 	color: black;
 	text-align: center;
@@ -269,8 +268,9 @@
 }
 .contact-box {
 	background: rgba(255, 255, 255, .6);
-	border-radius: 10px;
+	border-radius: 20px;
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 .lucas {
@@ -286,6 +286,10 @@
 
 
 /*Job Listings*/
+.job-listings {
+	overflow-y: scroll;
+  	position: relative;
+}
 
 .job-listings h1 {
 	color: black;
@@ -306,12 +310,14 @@
 
 .job-listings::after {
 	content: "";
-	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
-	opacity: 0.4; 
+	background-image: url("https://download.unsplash.com/photo-1429032021766-c6a53949594f");
+	opacity: 0.5; 
 	padding-bottom: 490px;
 	background-size: cover;
 	background-position: center;
 	margin-top: -22px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -327,7 +333,6 @@
 }
 
 /*Your Posts*/
-
 .your-posts h1 {
 	color: black;
 	text-align: center;
@@ -342,7 +347,7 @@
 
 .your-posts::after {
 	content: "";
-	background-image: url("http://www.aroundaboutcars.com/images/content/images/Cape%20Town%20Metropolitan.jpg");
+	background-image: url("https://download.unsplash.com/photo-1418479631014-8cbf89db3431");
 	opacity: 0.6; 
 	padding-bottom: 490px;
 	background-size: cover;
@@ -357,6 +362,7 @@
 }
 
 /* Sticky Footer */
+
 #footer {
 	/*position: absolute;*/
 	bottom: 0;
