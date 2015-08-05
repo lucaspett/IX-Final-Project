@@ -360,6 +360,38 @@
 	z-index: -1; 
 }
 
+/*New*/
+
+
+/*Edit*/
+.edit-page h1 {
+	color: black;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+.edit-box {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.edit-page::after {
+	content: "";
+	background-image: url("https://download.unsplash.com/photo-1418479631014-8cbf89db3431");
+	opacity: 0.6; 
+	padding-bottom: 490px;
+	background-size: cover;
+	background-position: center;
+	margin-top: -22px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1; 
+}
+
 /* Sticky Footer */
 
 #footer {
