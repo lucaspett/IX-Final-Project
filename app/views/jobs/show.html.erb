@@ -3,25 +3,25 @@
 		<div class="row">
 			<h1>Job Posting</h1>
 			<div class="show-box">
-				<p><strong>Job Title:</strong> 
+				<p><strong>Job Title</strong><br> 
 					<%= @job.title %></p>
 
-				<p><strong>Description:</strong>
+				<p><strong>Description</strong><br>
 					<%= @job.description %></p>
 
-				<p><strong>Suggested Qualifications:</strong>
+				<p><strong>Suggested Qualifications</strong><br>
 					<%= @job.qualifications %></p>
 
-				<p><strong>Pay (R):</strong>
+				<p><strong>Pay (R)</strong><br>
 					<%= @job.pay %></p>
 
-				<p><strong>Contact (Email,Phone):</strong>
+				<p><strong>Contact (Email,Phone)</strong><br>
 					<%= @job.contact %></p>
 
-				<p><strong>Date Published:</strong>
+				<p><strong>Date Published</strong><br>
 					<%= @job.date_published %></p>
 
-				<p><strong>Job Taken:</strong>
+				<p><strong>Job Open</strong><br>
 					<%= yes_no @job.accepted %></p>
 
 				<hr><br>

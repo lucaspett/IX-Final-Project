@@ -29,7 +29,7 @@
             <th>Pay (R)</th>
             <th>Contact (Email, Phone)</th>
             <th>Date Published</th>
-            <th>Job Taken</th>
+            <th>Job Open</th>
             <th colspan="8"></th>
           </tr>
          
@@ -42,9 +42,9 @@
               <td><%= job.contact%></td>
               <td><%= job.date_published%></td>
               <% if job.accepted == true %>
-                <td><i class="glyphicon glyphicon-ok"></i></td>
+                <td><i class="glyphicon glyphicon-remove red"></i></td>
               <% else %>
-                <td><i class="glyphicon glyphicon-remove"></i></td>
+                <td><i class="glyphicon glyphicon-ok green"></i></td>
               <% end %>
               <td><%= link_to job_path(job), class: 'btn btn-default' do %>
                 Show <i class="glyphicon glyphicon-folder-open"></i>

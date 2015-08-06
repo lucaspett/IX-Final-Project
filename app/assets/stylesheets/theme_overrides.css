@@ -302,6 +302,7 @@
 	background: rgba(255, 255, 255, .6);
 	border-radius: 20px;
 	text-align: center;
+	padding-top: 20px;
 	padding-bottom: 30px;
 }
 
@@ -520,6 +521,11 @@
 	padding-top: 12px;
 }
 
+.show-box p {
+	text-align: left;
+	padding-left: 20px;
+}
+
 .show-page::after {
 	content: "";
 	background-image: url("https://download.unsplash.com/photo-1429032021766-c6a53949594f");
@@ -555,6 +561,16 @@
 
 .color-border {
 	padding-bottom: 60px;
+}
+
+/*Glyphicons*/
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
 }
 
 /* Fixes for theme */
