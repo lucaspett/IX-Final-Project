@@ -9,25 +9,35 @@
 				<p><strong>Description</strong><br>
 					<%= @job.description %></p>
 
-				<p><strong>Suggested Qualifications</strong><br>
+				<p><strong>Qualifications</strong><br>
 					<%= @job.qualifications %></p>
 
 				<p><strong>Pay (R)</strong><br>
 					<%= @job.pay %></p>
 
-				<p><strong>Contact (Email,Phone)</strong><br>
+				<p><strong>Contact</strong><br>
 					<%= @job.contact %></p>
 
 				<p><strong>Date Published</strong><br>
 					<%= @job.date_published %></p>
 
-				<p><strong>Job Open</strong><br>
+				<p><strong>Job Open?</strong><br>
 					<%= yes_no @job.accepted %></p>
 
-				<hr><br>
+				<% if view_jobs?(@job) %>
+					<p><%= link_to "Edit", edit_job_path(@job), class: "btn btn-success"  %></p>
+				<% end %>
 
+				<p><%= link_to "Back", :back, class: "btn btn-primary"  %></p>
+
+				<p><%= link_to "Job Listings", jobs_path, class: "btn btn-primary"  %></p>
+			</div>
+			<br>
+
+			<div class="show-bottom">
 				<% if view_jobs?(@job) %> 
-				 
+				
+					<h2>Job Applications</h2>
 				  <%= render @job.applications %>
 
 				<% end %>
@@ -37,15 +47,7 @@
 					<h2>Apply Here</h2>
 					<%= render 'applications/form' %>
 
-				<% end %>
-
-				<% if view_jobs?(@job) %>
-					<p><%= link_to "Edit", edit_job_path(@job), class: "btn btn-success"  %></p>
-				<% end %>
-
-				<p><%= link_to "Back", :back, class: "btn btn-primary"  %></p>
-
-				<p><%= link_to "Job Listings", jobs_path, class: "btn btn-primary"  %></p>
+				<% end %>				
 			</div>
 		</div>
 	</div>

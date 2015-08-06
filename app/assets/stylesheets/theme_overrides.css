@@ -104,6 +104,18 @@
 	display: inline-block;
 }
 
+.login-box {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+	padding-left: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /*Signup Page*/
 .signup-page h1 {
 	color: white;
@@ -135,6 +147,18 @@
 	right: 0;
 	position: absolute;
 	z-index: -1; 
+}
+
+.signup-box {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+	padding-left: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /*Forgot Your Password*/
@@ -170,6 +194,18 @@
 	z-index: -1; 
 }
 
+.fyp-box {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+	padding-left: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /*Edit Profile*/
 .edit-profile-page h1 {
 	color: white;
@@ -180,7 +216,7 @@
 }
 
 .edit-profile-page h3 {
-	color: white;
+	color: black;
 	text-align: center;
 	padding-top: 35px;
 	font-family: 'PT Serif', serif;
@@ -214,6 +250,18 @@
 .edit-profile-back {
 	color: black;
 	text-align: center;
+}
+
+.edit-profile-box {
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+	padding-left: 10px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* About Page */
@@ -330,6 +378,10 @@
 	font-size: 70px;
 }
 
+.job-listings td {
+	text-align: left;
+}
+
 .search-box {
 	display: inline-block;
 	float: right;
@@ -363,6 +415,7 @@
 	background: rgba(255, 255, 255, .9);
 	border-radius: 10px;
 	text-align: center;
+	padding-left: 10px;
 }
 
 .table.job-table td {
@@ -382,6 +435,11 @@
 	background: rgba(255, 255, 255, .9);
 	border-radius: 10px;
 	text-align: center;
+	padding-left: 10px;
+}
+
+.your-posts td {
+	text-align: left;
 }
 
 .your-posts::after {
@@ -517,13 +575,24 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
-	padding-bottom: 225px;
 	padding-top: 12px;
+	padding-bottom: 10px;
 }
 
 .show-box p {
 	text-align: left;
 	padding-left: 20px;
+}
+
+.show-bottom {
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(255, 255, 255, .9);
+	border-radius: 10px;
+	text-align: center;
+	width: 550px;
+	padding-bottom: 100px;
+	padding-top: 12px;
 }
 
 .show-page::after {
