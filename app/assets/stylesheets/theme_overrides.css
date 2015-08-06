@@ -21,14 +21,14 @@
     bottom: 14px;
 }
 
-/*.navbar-header {
+.navbar-header {
 position: absolute;
     width: 100%;
     left: 50px;
     text-align: left;
     margin: auto;
     bottom: 14px;
-}*/
+}
 
 .navbar-nav>li {
 	padding-bottom: 22px;
