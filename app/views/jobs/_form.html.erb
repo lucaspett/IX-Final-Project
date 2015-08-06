@@ -13,34 +13,27 @@
 	</div>
 	<% end %>
 	  
-	<%= form_for @job do |f| %>
-	<p class="form-attributes">
-		<%= f.label :title, "Job Title" %><br>
-		<%= f.text_field :title %>
+	<%= simple_form_for(@job, html: { class: 'form-horizontal' }) do |f| %>
+	<p>
+		<%= f.input :title %>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :description %><br>
-		<%= f.text_area :description %>
+	<p>
+		<%= f.input :description %>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :qualifications, "Suggested Qualifications" %><br>
-		<%= f.text_field :qualifications %>
+	<p>
+		<%= f.input :qualifications, label: "Suggested Qualifications" %>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :pay, "Pay (R)" %><br>
-		<%= f.text_field :pay %>
+	<p>
+		<%= f.input :pay, label: "Pay (R)" %>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :contact, "Contact (Email, Phone)" %><br>
-		<%= f.text_field :contact%>
+	<p>
+		<%= f.input :contact, label: "Contact (Email, Phone)"%>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :date_published %><br>
-		<%= f.text_field :date_published %>
+	<p>
+		<%= f.input :date_published %>
 	</p>
-	<p class="form-attributes">
-		<%= f.label :accepted, "Job Taken" %><br>
-		<%= f.check_box :accepted %>
+	<p>
+		<%= f.input :accepted, label: "Job Taken" %>
 	</p>
 	<p>
 		<%= f.submit class: "btn btn-success" %>
