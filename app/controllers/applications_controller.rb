@@ -2,7 +2,7 @@ class ApplicationsController < ApplicationController
   def create
     @job = Job.find(params[:job_id])
     @application = @job.applications.create(application_params)
-    redirect_to job_path(@job)
+    redirect_to job_path(@job), :notice => "Application Submitted!"
   end
 
   def destroy
@@ -10,7 +10,7 @@ class ApplicationsController < ApplicationController
     @application = @job.applications.find(params[:id])
     @application.destroy
 
-    redirect_to job_path(@job)
+    redirect_to job_path(@job), :alert => "Application Destroyed"
   end
  
   private
