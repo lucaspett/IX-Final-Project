@@ -24,6 +24,8 @@
 				<p><strong>Job Open?</strong><br>
 					<%= yes_no @job.accepted %></p>
 
+				<br><br>
+
 				<% if view_jobs?(@job) %>
 					<p><%= link_to "Edit", edit_job_path(@job), class: "btn btn-success"  %></p>
 				<% end %>
@@ -34,21 +36,21 @@
 			</div>
 			<br>
 
-			<div class="show-bottom">
-				<% if view_jobs?(@job) %> 
-				
+			<% if view_jobs?(@job) %>
+				<div class="show-bottom">
 					<h2>Job Applications</h2>
-				  <%= render @job.applications %>
+			  		<%= render @job.applications %>
+			  	</div>
+			<% end %>
 
-				<% end %>
-
-				<% if !view_jobs?(@job) %>
-
+			<% if @job.accepted != true && !view_jobs?(@job)%> 
+				<div class="show-bottom-two">
+					<% if !view_jobs?(@job) %>
 					<h2>Apply Here</h2>
 					<%= render 'applications/form' %>
-
-				<% end %>				
-			</div>
+					<% end %>
+				</div>		
+			<% end %>			
 		</div>
 	</div>
 </div>
