@@ -467,6 +467,7 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
+	padding-bottom: 160px;
 }
 
 .show-page::after {
