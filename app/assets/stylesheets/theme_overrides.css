@@ -489,6 +489,7 @@ position: absolute;
 	text-align: center;
 	width: 550px;
 	padding-bottom: 225px;
+	padding-top: 12px;
 }
 
 .show-page::after {
