@@ -380,6 +380,12 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
+	padding-bottom: 100px;
+}
+
+.new-box .form-control, .edit-box .form-control {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .new-page::after {
@@ -420,6 +426,7 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
+	padding-bottom: 100px;
 }
 
 .edit-page::after {
@@ -486,6 +493,11 @@
 	right: 0;
 	position: absolute;
 	z-index: -1; 
+}
+
+.application-form .form-control {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* Sticky Footer */
