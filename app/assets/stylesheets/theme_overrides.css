@@ -534,6 +534,12 @@
 	padding-bottom: 60px;
 }
 
+.btn-primary:hover, .btn-primary:focus {
+	background: #2d78ae;
+	outline: none;
+	box-shadow: none;
+}
+
 /* Fixes for theme */
 
 /*
@@ -544,3 +550,5 @@
 .navbar .navbar-inverse {
 	border-radius: 0;
 }
+
+*/

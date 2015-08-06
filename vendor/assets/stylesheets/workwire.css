@@ -6,10 +6,14 @@ body {
 	line-height: 22px;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
 	font-family: 'Open Sans', sans-serif;
 	color: #4e4e4e;
 }
+
+h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+
 h1 {
 	font-size: 46px;
 	font-weight: 700;
@@ -50,11 +54,11 @@ hr {
 	border: none;
 	margin-top: 10px;
 }
-.btn-primary:hover, .btn-primary:focus {
+/*.btn-primary:hover, .btn-primary:focus {
 	background: #2d78ae;
 	outline: none;
 	box-shadow: none;
-}
+}*/
 a:hover, a:focus {
 	color: #111;
 	text-decoration: none;
