@@ -211,6 +211,12 @@
 }
 
 /* About Page */
+
+.about-page {
+	overflow-y: scroll;
+  	position: relative;
+}
+
 .about-page h1 {
 	color: black;
 	text-align: center;
@@ -223,6 +229,7 @@
 	font-size: 23px;
 	font-family: 'PT Serif', serif;
 	background: rgba(255,255,255,.6);
+	height: 260px;
 	margin-top: 50px;
 	border-radius: 10px;
 }
@@ -234,6 +241,8 @@
 	padding-bottom: 490px;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	margin-top: -22px;
 	top: 0;
 	left: 0;
