@@ -252,7 +252,7 @@
 
 .contact-page::after {
 	content: "";
-	background-image: url("https://www.jobmail.co.za/blog/wp-content/uploads/2014/12/Cape-Town-South-Africa.jpg");
+	background-image: url("https://images.unsplash.com/photo-1413913619092-816734eed3a7?q=80&fm=jpg&s=f3cf2eb12dcb9dd781b1ef5e35b25f12");
 	opacity: 0.6; 
 	padding-bottom: 490px;
 	background-size: cover;
@@ -467,7 +467,7 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
-	padding-bottom: 160px;
+	padding-bottom: 210px;
 }
 
 .show-page::after {

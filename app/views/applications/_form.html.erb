@@ -1,27 +1,21 @@
-<%= form_for([@job, @job.applications.build]) do |f| %>
+<%= simple_form_for([@job, @job.applications.build]) do |f| %>
   <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.input :name %>
   </p>
   <p>
-    <%= f.label :contact, "Contact (Email, Phone)" %><br>
-    <%= f.text_field :contact %>
+    <%= f.input :contact, label: "Contact (Email, Phone)" %>
   </p>
   <p>
-    <%= f.label :address, "City / Town" %><br>
-    <%= f.text_field :address %>
+    <%= f.input :address, label: "City / Town" %>
   </p>
   <p>
-    <%= f.label :skills, "List Relevant Skills" %><br>
-    <%= f.text_field :skills %>
+    <%= f.input :skills, label: "List Relevant Skills" %>
   </p>
   <p>
-    <%= f.label :past_experiences, "List Past Experiences" %><br>
-    <%= f.text_area :past_experiences %>
+    <%= f.input :past_experiences, label: "List Past Experiences" %>
   </p>
   <p>
-    <%= f.label :summary, "Why Does This Job Interest You?" %><br>
-    <%= f.text_area :summary %>
+    <%= f.input :summary, label: "Why Does This Job Interest You?" %>
   </p>
   <p>
     <%= f.submit "Submit", class: "btn btn-success" %>
