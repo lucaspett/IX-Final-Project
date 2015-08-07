@@ -490,7 +490,7 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
-	padding-bottom: 200px;
+	padding-bottom: 250px;
 }
 
 .new-box .form-control, .edit-box .form-control {
@@ -537,7 +537,7 @@
 	border-radius: 10px;
 	text-align: center;
 	width: 550px;
-	padding-bottom: 200px;
+	padding-bottom: 250px;
 }
 
 .edit-page::after {
