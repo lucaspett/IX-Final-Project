@@ -1,4 +1,8 @@
 /*HomePage Navbar / Slider*/
+.grey-bg {
+	background: #2e2e2e;
+}
+
 .btn-primary:hover, .btn-primary:focus {
 	background: #2d78ae;
 	outline: none;
@@ -272,7 +276,7 @@
 }
 
 .about-page h1 {
-	color: black;
+	color: white;
 	text-align: center;
 	font-family: 'PT Serif', serif;
 	font-size: 70px;
@@ -574,7 +578,6 @@
 	font-size: 70px;
 }
 
-
 .show-box {
 	margin-right: auto;
 	margin-left: auto;
@@ -589,6 +592,7 @@
 .show-box p {
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 .show-bottom {
@@ -642,9 +646,7 @@
 	/*position: absolute;*/
 	bottom: 0;
 	width: 100%;
-	padding-top: 0;
 	z-index: 1000;
-	padding-bottom: 95px;
 }
 
 .color-border {

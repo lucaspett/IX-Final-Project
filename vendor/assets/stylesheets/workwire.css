@@ -750,8 +750,8 @@ textarea#message {
 ********* Footer ******
 ************************/
 #footer {
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 0px;
+	padding-bottom: 400px;
 	color: #aaa;
 	background: #2e2e2e;
 }
