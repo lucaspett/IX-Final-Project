@@ -11,7 +11,7 @@ class JobsController < ApplicationController
 			@jobs = Job.all
 		end
 
-		@jobs = @jobs.order(created_at: :desc)
+		@jobs = @jobs.order(date_published: :desc)
 	end
 
 	def show
