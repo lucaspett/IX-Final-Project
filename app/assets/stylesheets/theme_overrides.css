@@ -640,6 +640,10 @@
 	margin: 0 auto;
 }
 
+.applications {
+	font-size: 20px;
+}
+
 /* Sticky Footer */
 
 #footer {
