@@ -574,7 +574,6 @@
 	font-size: 70px;
 }
 
-
 .show-box {
 	margin-right: auto;
 	margin-left: auto;
@@ -589,6 +588,7 @@
 .show-box p {
 	text-align: left;
 	padding-left: 20px;
+	font-size: 20px;
 }
 
 .show-bottom {
