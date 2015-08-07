@@ -29,7 +29,7 @@ gem 'devise'
 
 gem 'twitter-bootstrap-rails'
 
-gem 'font-awesome-rails'
+# gem 'font-awesome-rails'
 
 gem 'bootstrap-glyphicons'
 
