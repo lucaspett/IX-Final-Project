@@ -24,9 +24,9 @@
         <table class="table job-table">
           <tr>
             <th>Job Title</th>
-            <th>Description</th>
+            <!-- <th>Description</th>
             <th>Qualifications</th>
-            <th>Pay (R)</th>
+            <th>Pay (R)</th> -->
             <th>Contact</th>
             <th>Date Published</th>
             <th>Job Open?</th>
@@ -36,9 +36,9 @@
           <% @jobs.each do |job| %>
             <tr>
               <td><%= job.title %></td>
-              <td><%= job.description %></td>
+              <!-- <td><%= job.description %></td>
               <td><%= job.qualifications %></td>
-              <td><%= job.pay%></td>
+              <td><%= job.pay%></td> -->
               <td><%= job.contact%></td>
               <td><%= job.date_published%></td>
               <% if job.accepted == true %>
