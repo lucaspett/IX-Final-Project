@@ -8,6 +8,7 @@
 
 User.delete_all
 Job.delete_all
+Application.delete_all
 
 puts "Creating Users and Jobs..."
 
