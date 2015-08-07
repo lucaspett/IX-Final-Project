@@ -1,4 +1,8 @@
 /*HomePage Navbar / Slider*/
+.grey-bg {
+	background: #2e2e2e;
+}
+
 .btn-primary:hover, .btn-primary:focus {
 	background: #2d78ae;
 	outline: none;
@@ -642,7 +646,6 @@
 	/*position: absolute;*/
 	bottom: 0;
 	width: 100%;
-	padding-top: 0;
 	z-index: 1000;
 }
 
